@@ -1,0 +1,23 @@
+individual_values:
+  machine_type: avtomobilniy_kran # Now possible only avtomobilniy_kran
+  machine_amount: 3 # from task
+  k_zminnosti: 1.3 # from task
+  p_ch: 0.0186 #dodatok 5
+  koef_naprac: 0.7 # from task
+  relocation_amount: 0 # from task
+  t_rozvantazhennya: 0.3 # dodatok 1
+  v_transportuvannya: 40 # 1 category dodatok 2 & 3
+
+  weather: # from dodatok 4
+    temperature_under_30: 9.3
+    wind_greater_than_10: 51.4
+    rain: 8.8
+    cold_earth: 182
+
+
+shared_values:
+  calendar_days: 366
+  shift_duration: 8 # const
+  holidays: 104
+  hard_work: 0 # ???
+  k_v: 0.92 # const
