@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/dpatsora/pkg/conf"
+	"github.com/dpatsora/eom-go/pkg/config"
+	"github.com/dpatsora/eom-go/pkg/workmode"
 )
 
 func main() {
-	var c conf
-	c.getConf()
+	config := &config.Config{}
+	config.GetConfig()
 
-	fmt.Println(c)
-	fmt.Println(c.IndividualValues)
-	//fmt.Println(c.IndividualValues.weather.temperature_under_30)
+	fmt.Println("Річний режим роботи:",workmode.AnnualOperationMode(config))
 }
