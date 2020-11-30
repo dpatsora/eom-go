@@ -29,6 +29,8 @@ type IndividualValues struct {
 	TRozvantazhennya float32 `yaml:"t_rozvantazhennya"`
 	VTransportuvannya float32 `yaml:"v_transportuvannya"`
 	Weather Weather `yaml:"weather"`
+	Periodicity Periodicity `yaml:"periodicity"`
+	LaborIntensity LaborIntensity `yaml:"labor_intensity"`
 }
 
 type Weather struct {
@@ -38,6 +40,19 @@ type Weather struct {
 	ColdEarthn float32 `yaml:"cold_earth"`
 }
 
+type Periodicity struct {
+	To1 int `yaml:"to_1"`
+	To2 int `yaml:"to_2"`
+	Regular int `yaml:"regular"`
+	Capital int `yaml:"capital"`
+}
+
+type LaborIntensity struct {
+	To1 int `yaml:"to_1"`
+	To2 int `yaml:"to_2"`
+	Season int `yaml:"season"`
+	Regular int `yaml:"regular"`
+}
 
 func (c *Config) GetConfig() *Config {
 

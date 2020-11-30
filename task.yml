@@ -14,10 +14,21 @@ individual_values:
     rain: 8.8
     cold_earth: 182
 
+  periodicity: # from SOU
+    to_1: 50
+    to_2: 250
+    regular: 1000
+    capital: 5000
+
+  labor_intensity:
+    to_1: 7
+    to_2: 25
+    season: 13
+    regular: 600
 
 shared_values:
   calendar_days: 366
   shift_duration: 8 # const
-  holidays: 104
-  hard_work: 0 # ???
+  holidays: 115
+  hard_work: 29 # ???
   k_v: 0.92 # const

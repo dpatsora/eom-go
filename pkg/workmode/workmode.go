@@ -66,3 +66,18 @@ func RelocationToRepair(config *config.Config) float32 {
 
 	return ((2 * l)/(t_tr * v_tr) + (2 * t_nr)/t_tr + t_p + t_0) * n_k / n_sp
 }
+
+func GeneralOnRepair(config * config.Config) float32  {
+	d_k := float32(config.SharedValues.CalendarDays)
+	k_zm := float32(config.IndividualValues.KoefZminnosti)
+	p_ch := float32(config.IndividualValues.PCh)
+	t_zm := float32(config.SharedValues.ShiftDuration)
+	d_0 := GeneralWithoutWork(config)
+
+	return ((d_k-d_0) * p_ch * t_zm * k_zm)/(1 + p_ch * t_zm * k_zm)
+}
+
+func GeneralWithoutWorkWithRepair(config * config.Config) float32{
+	// D_p
+	return GeneralWithoutWork(config) + GeneralOnRepair(config)
+}
