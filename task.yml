@@ -26,9 +26,44 @@ individual_values:
     season: 13
     regular: 600
 
+  a_tor:
+    1:
+      a: 7339.1
+      n: 3
+      r: 0.9
+    2:
+      a: 3176.7
+      n: 1
+      r: 0.8
+    3:
+      a: 2586.6
+      n: 3
+      r: 0.8
+    4:
+      a: 16671
+      n: 2
+      r: 0.8
+    5:
+      a: 9607.5
+      n: 2
+      r: 0.8
+    13:
+      a: 11510
+      n: 3
+      r: 0.9
+    14:
+      a: 5171
+      n: 1
+      r: 0.8
+    15:
+      a: 4168
+      n: 1
+      r: 0.8
+
 shared_values:
   calendar_days: 366
   shift_duration: 8 # const
   holidays: 115
+  vacations: 24
   hard_work: 29 # ???
   k_v: 0.92 # const

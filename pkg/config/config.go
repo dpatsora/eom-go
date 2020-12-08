@@ -15,6 +15,7 @@ type SharedValues struct {
 	CalendarDays int `yaml:"calendar_days"`
 	ShiftDuration float32 `yaml:"shift_duration"`
 	Holidays int `yaml:"holidays"`
+	Vacations int `yaml:"vacation"`
 	HardWork int `yaml:"hard_work"`
 	KV float32 `yaml:"k_v"`
 }
@@ -31,6 +32,7 @@ type IndividualValues struct {
 	Weather Weather `yaml:"weather"`
 	Periodicity Periodicity `yaml:"periodicity"`
 	LaborIntensity LaborIntensity `yaml:"labor_intensity"`
+	ATor map[string]map[string]float32 `yaml:"a_tor"`
 }
 
 type Weather struct {
