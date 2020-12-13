@@ -61,7 +61,7 @@ individual_values:
       r: 0.8
 
 shared_values:
-  calendar_days: 366
+  calendar_days: 365
   shift_duration: 8 # const
   holidays: 115
   vacations: 24
